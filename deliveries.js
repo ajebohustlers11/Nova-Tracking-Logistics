@@ -34,7 +34,7 @@ const deliveries = [
       status: "pending",
       comments: "Package prepared for shipment",
       agentName: "Jason Moore",
-      shipmentType: "Air"
+      shipmentType: "Freight"
     },
   },
 
@@ -350,5 +350,6 @@ const deliveries = [
     },
   }
 ];
+
 
 
