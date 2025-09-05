@@ -74,8 +74,8 @@ const deliveries = [
       shipmentType: "Air"
     },
   }
-  }
 ];
+
 
 
 
