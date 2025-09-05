@@ -1,0 +1,303 @@
+/* ===== Mobile-First Responsive Styles (updated, with admin icon background restored) ===== */
+:root{
+  --bg: #0b0f19;
+  --card: #0f1624;
+  --muted: #9aa6c7;
+  --text: #eaeefb;
+  --accent: #6aa6ff;
+  --accent2: #7bf1a8;
+  --border: rgba(255,255,255,0.08);
+  --radius: 14px;
+  --gap: 12px;
+  --max-content-width: 1200px;
+
+  /* Default hero image — change URL to the web-hosted image if you want */
+.hero {
+  position: relative;
+  min-height: 46vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), var(--hero);
+  background-size: cover;
+  background-position: center;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+}
+
+/* Reset & base */
+* { box-sizing: border-box; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+html,body { height:100%; margin:0; }
+html { font-size:16px; }
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg) 50%, #0e1424 100%);
+  color: var(--text);
+  line-height:1.45;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Links & small utilities */
+a { color:var(--accent); text-decoration:none; transition: color .22s ease; }
+a:hover { color:var(--accent2); }
+.mono { font-family: ui-monospace, Menlo, monospace; }
+
+/* Code chip */
+.code {
+  background: #0e1426;
+  border: 1px solid var(--border);
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: .92em;
+}
+
+/* Loader (responsive cube) */
+.loader{
+  position: fixed; inset:0;
+  display:grid; place-items:center;
+  background: radial-gradient(1200px 600px at 50% -20%, rgba(106,166,255,0.12), transparent), var(--bg);
+  z-index:9999;
+}
+.cube{ width: clamp(44px, 18vw, 80px); height: clamp(44px, 18vw, 80px); transform-style:preserve-3d; animation: spin 2.6s linear infinite; }
+.face{ position:absolute; inset:0; background: linear-gradient(135deg, var(--accent), #b892ff); opacity:.86; border:1px solid rgba(255,255,255,.12); border-radius:6px; }
+@keyframes spin { from{ transform: rotateX(-20deg) rotateY(0deg);} to{ transform: rotateX(-20deg) rotateY(360deg);} }
+.loading-text{ margin-top:12px; color:var(--muted); font-size:.95em; }
+
+/* Layout container helper */
+.container{
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 14px;
+}
+
+/* Header */
+.site-header{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:var(--gap);
+  padding: 12px 14px;
+}
+.brand{ display:flex; gap:10px; align-items:center; }
+.logo{ width:40px; height:40px; flex:0 0 40px; border-radius:8px; object-fit:cover; }
+.brand-name{ margin:0; font-weight:700; font-size:clamp(16px,4vw,20px); letter-spacing:.2px; }
+.tagline{ color:var(--muted); font-size:.85rem; margin:0; }
+
+/* Hero (uses gradient overlay + your image) */
+.hero{
+  min-height: 36vh;
+  display:flex;
+  align-items:center;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+
+  /* gradient overlay over hero image */
+  background-image:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+    var(--hero-image);
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 18px 0;
+}
+.hero-inner{ width:100%; }
+.hero h2{ font-size: clamp(20px, 7vw, 36px); margin:0 0 8px 0; line-height:1.05; }
+.hero p{ margin:0 0 12px 0; color:#d7def1; font-weight:500; }
+
+/* Tracking form: mobile-first */
+.track-form{
+  display:flex;
+  gap:10px;
+  flex-direction:column;
+  width:100%;
+}
+.track-form .row{ display:flex; gap:10px; width:100%; }
+input[type="text"], input, select {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #0f1527;
+  color: var(--text);
+  outline: none;
+  width:100%;
+  min-width:0;
+  transition: border .22s ease, background .22s ease, box-shadow .18s ease;
+  font-size: .98rem;
+}
+input:focus{ border-color:var(--accent); background:#131a30; box-shadow: 0 6px 18px rgba(106,166,255,0.05); }
+
+/* Buttons */
+.btn{
+  appearance:none; border:none; cursor:pointer;
+  border-radius:12px; padding:12px 16px; font-weight:700;
+  transition: transform .12s ease, box-shadow .15s ease;
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:44px;
+}
+.btn:active{ transform: translateY(0); }
+.btn.primary{
+  background: linear-gradient(135deg,var(--accent), #9ad1ff);
+  color:#061021;
+}
+.btn.full{ width:100%; }
+
+/* Panels & cards */
+.panel{ margin:14px auto; padding:0 14px; width:100%; }
+.panel-title{ font-size:.95rem; margin:0 0 8px 0; color:#cdd7f5; font-weight:600; }
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.28);
+  overflow:hidden;
+}
+.card-body{ padding:14px; }
+
+/* Summary (compact) */
+.summary{ min-height:48px; }
+
+/* Status bar */
+.statusbar{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:8px 0 12px; }
+.step{ display:flex; align-items:center; gap:8px; }
+.dot{ width:12px; height:12px; border-radius:50%; background:#39415a; border:2px solid #2a3147; transition:all .2s ease; }
+.dot.active{ background:var(--accent); border-color:var(--accent2); }
+
+/* Table styling (improved responsive) */
+.table { width:100%; border-collapse:collapse; }
+.table th, .table td { border-bottom:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; }
+.table th { font-size:.88rem; color:var(--muted); font-weight:600; }
+
+/* Footer */
+.site-footer{ border-top:1px solid var(--border); margin-top:20px; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding-top:10px; }
+.footer-grid{ display:grid; grid-template-columns: 1fr; gap:12px; max-width:var(--max-content-width); margin:0 auto; padding:18px; }
+.footer-brand{ font-weight:800; font-size:1rem; margin-bottom:6px; }
+.footer-heading{ font-weight:700; margin-bottom:6px; }
+.footer-text{ color:var(--muted); }
+
+/* Admin icon — restored background exactly as requested */
+.admin-icon{
+  position: fixed; bottom: 16px; right: 16px;
+  width:36px; height:36px;
+  background: url('assets/hidden-icon.svg') no-repeat center center / cover;
+  opacity:.18; cursor:pointer; border-radius:8px;
+  transition: opacity .2s ease, transform .12s ease;
+  z-index:9999;
+}
+.admin-icon:hover{ opacity:1; transform:scale(1.05); }
+
+/* Desktop / larger screens: scale up spacing & layout */
+@media (min-width: 700px){
+  .track-form{ flex-direction:row; align-items:center; }
+  input[type="text"], input { font-size:1rem; }
+  .container{ padding: 18px; }
+  .hero{ min-height:46vh; padding: 28px 0; }
+  .hero-inner{ max-width: var(--max-content-width); margin: 0 auto; padding: 32px 14px; }
+  .footer-grid{ grid-template-columns: 1.6fr 1fr 1fr; padding: 20px; }
+}
+
+/* Large screens */
+@media (min-width: 1000px){
+  .site-header{ max-width: var(--max-content-width); margin:0 auto; padding:18px; }
+  .panel{ max-width: var(--max-content-width); }
+}
+
+/* Table responsive transform for very small screens */
+@media (max-width: 600px){
+  /* Ensure tap targets are comfortable */
+  .btn{ padding:14px 16px; min-height:48px; border-radius:12px; }
+  .card-body{ padding:12px; }
+  .logo{ width:36px; height:36px; }
+  .brand-name{ font-size:16px; }
+
+  /* Make table card-like rows */
+  .table, .table thead, .table tbody, .table tr { display:block; width:100%; }
+  .table thead { display:none; }
+  .table tr {
+    background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding:10px;
+  }
+  .table td {
+    display:flex; justify-content:space-between; padding:10px 12px; border-bottom: none;
+    position:relative; align-items:center;
+  }
+  .table td::before { /* label from data-label attr */
+    content: attr(data-label);
+    display:block;
+    flex:0 0 46%;
+    text-align:left;
+    font-weight:600;
+    color:var(--muted);
+  }
+
+  /* Stack the tracking form nicely */
+  .track-form{ gap:10px; padding: 0; }
+  .track-form .row{ flex-direction:column; gap:10px; }
+  .btn.primary{ width:100%; }
+
+  /* Make the admin icon unobtrusive on small screens */
+  .admin-icon{ width:34px; height:34px; bottom:12px; right:12px; opacity:.12; }
+}
+
+/* Extra small devices */
+@media (max-width: 420px){
+  html { font-size:15px; }
+  .brand-name{ font-size:15px; }
+  .hero h2{ font-size: clamp(18px,7vw,24px); }
+  .dot{ width:10px; height:10px; }
+  .admin-icon{ display:none; } /* hide to avoid covering UI on tight screens */
+}
+
+/* Table alternate row & small visual tweaks for desktop */
+.table tr:nth-child(even) td { background: rgba(255,255,255,0.01); }
+.table tr td:first-child { font-weight:600; width:38%; }
+
+/* Accessibility & focus */
+button:focus, input:focus, a:focus { outline: 3px solid rgba(106,166,255,0.12); outline-offset:2px; border-radius:8px; }
+
+/* Small niceties */
+.muted { color:var(--muted); font-size:.95rem; }
+
+
+
+
+
+
+
+/* Basic styling — tweak as needed */
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: system-ui, Arial, sans-serif;
+  margin: 8px 0;
+}
+.detail-table th {
+  text-align: left;
+  background: #f3f4f6;
+  padding: 8px;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.detail-table td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+  font-size: 0.95rem;
+}
+.detail-table tr.section-head th {
+  background: #eef2ff;
+  font-weight: 700;
+  font-size: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+.detail-key {
+  width: 35%;
+  color: #374151;
+  font-weight: 600;
+}
+.detail-val {
+  width: 65%;
+  color: #111827;
+}
+@media (max-width: 600px) {
+  .detail-key { display: block; width: 100%; font-weight: 700; }
+  .detail-val { display: block; width: 100%; }
+}
