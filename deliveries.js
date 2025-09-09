@@ -39,40 +39,40 @@ const deliveries = [
   },
 
   {
-    trackingCode: "US99887766",
-    estimatedDelivery: "Sep 02, 2025 14:00",
-    customs: "Awaiting clearance, New York JFK",
+    trackingCode: "R6556654RFE",
+    estimatedDelivery: "Sep 12, 2025 14:00",
+    customs: "",
     shipper: {
-      name: "FedEx USA",
-      phone: "+1 212 555 0199",
-      address: "45 Madison Ave, New York, USA",
-      email: "help@fedex.com"
+      name: "Ameliorate",
+      phone: "+1 (929) 330-9752",
+      address: "06-101, WeWork 115 Broadway, New York, NY 10006, USA.",
+      email: "amelioratecollaboration@gmail.com"
     },
     receiver: {
-      name: "Maria Lopez",
-      phone: "+34 612 334455",
-      address: "Calle Mayor 10, Madrid, Spain",
-      email: "maria.lopez@example.es"
+      name: "suhaima",
+      phone: "+91 8660324267",
+      address: "silver cloud pg bannimantap c layout,mysore, karnataka 570015",
+      email: "Createsugc@gmail.com"
     },
     shipment: {
-      weight: "12 kg",
-      courier: "FedEx",
-      packages: "Carton",
+      weight: "5.9 kg",
+      courier: "NOVA",
+      packages: "Pr Package",
       mode: "Air",
-      product: "Electronics",
-      quantity: 1,
-      paymentMode: "Credit Card",
-      totalFreight: "$450",
-      carrier: "Delta Cargo",
+      product: "Skin care products",
+      quantity: 30,
+      paymentMode: "Paypal/Bank transfer",
+      totalFreight: "$160",
+      carrier: "Air carrier (Nova445763222)",
       carrierRef: "DL33221",
       departureTime: "09:30",
       origin: "New York",
-      destination: "Madrid",
-      pickupDate: "20, Aug 2025",
+      destination: "India",
+      pickupDate: "Sep 15, 2025",
       pickupTime: "08:00",
-      status: "Order Processing",
-      comments: "On the way to airport",
-      agentName: "John Smith",
+      status: "Pending",
+      comments: "Package prepared for shipment",
+      agentName: "Jason Moore",
       shipmentType: "Air Express"
     },
   },
@@ -350,6 +350,7 @@ const deliveries = [
     },
   }
 ];
+
 
 
 
