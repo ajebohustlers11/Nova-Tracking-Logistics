@@ -71,7 +71,7 @@ const deliveries = [
       pickupDate: "Sep 15, 2025",
       pickupTime: "08:00",
       status: "Pending",
-      comments: "Package prepared for shipment",
+      comments: "Package awating insurance coverage",
       agentName: "Jason Moore",
       shipmentType: "Air Express"
     },
@@ -350,6 +350,7 @@ const deliveries = [
     },
   }
 ];
+
 
 
 
