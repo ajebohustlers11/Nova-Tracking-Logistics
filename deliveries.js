@@ -68,7 +68,7 @@ const deliveries = [
       departureTime: "09:30",
       origin: "New York",
       destination: "India",
-      pickupDate: "Sep 15, 2025",
+      pickupDate: "Sep 17, 2025",
       pickupTime: "08:00",
       status: "Pending",
       comments: "Package awating insurance coverage",
@@ -350,6 +350,7 @@ const deliveries = [
     },
   }
 ];
+
 
 
 
