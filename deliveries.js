@@ -70,7 +70,7 @@ const deliveries = [
       destination: "India",
       pickupDate: "Sep 17, 2025",
       pickupTime: "08:00",
-      status: "Pending",
+      status: "Accepted",
       comments: "Package awating insurance coverage",
       agentName: "Jason Moore",
       shipmentType: "Air Express"
@@ -99,7 +99,7 @@ const deliveries = [
       packages: "PR Package",
       mode: "Air",
       product: "Skincare products",
-      quantity: 20,
+      quantity: 30,
       paymentMode: "Google pay",
       totalFreight: "$160",
       carrier: "Air carrier (Nova445763222)",
@@ -109,7 +109,7 @@ const deliveries = [
       destination: "INDIA",
       pickupDate: "23, Sep 2025",
       pickupTime: "10:00",
-      status: "Pending",
+      status: "Accepted",
       comments: "Item is yet to be dispatched",
       agentName: "William Burkett",
       shipmentType: "Air express"
@@ -350,6 +350,7 @@ const deliveries = [
     },
   }
 ];
+
 
 
 
