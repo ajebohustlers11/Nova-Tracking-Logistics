@@ -78,41 +78,41 @@ const deliveries = [
   },
 
   {
-    trackingCode: "UK44556677",
-    estimatedDelivery: "Aug 28, 2025 17:00",
-    customs: "Heathrow cleared",
+    trackingCode: "US44556677",
+    estimatedDelivery: "Sep 22, 2025 17:00",
+    customs: "",
     shipper: {
-      name: "London Logistics",
-      phone: "+44 20 7946 0991",
-      address: "Baker St 221B, London",
-      email: "support@londonlog.com"
+      name: "Ameliorate",
+      phone: "+1 9193442178",
+      address: "06-101, WeWork 115 Broadway, New York, NY 10006, USA.",
+      email: "amelioratecollaboration@gmail.com"
     },
     receiver: {
-      name: "Kenji Tanaka",
-      phone: "+81 90 1234 5678",
-      address: "Shinjuku 5-10, Tokyo, Japan",
-      email: "kenji.t@example.jp"
+      name: "Ritika Gill",
+      phone: "+91 7018106747",
+      address: " 3 India ( Post graduate government college for girls sector 11 chandigarh 160011 )",
+      email: "skindewy218@gmail.com"
     },
     shipment: {
-      weight: "5 kg",
-      courier: "DHL",
-      packages: "Parcel",
+      weight: "5.6kg",
+      courier: "NOVA",
+      packages: "PR Package",
       mode: "Air",
-      product: "Books",
-      quantity: 10,
-      paymentMode: "PayPal",
-      totalFreight: "$200",
-      carrier: "British Airways",
+      product: "Skincare products",
+      quantity: 20,
+      paymentMode: "Google pay",
+      totalFreight: "$160",
+      carrier: "Air carrier (Nova445763222)",
       carrierRef: "BA556677",
       departureTime: "11:15",
-      origin: "London",
-      destination: "Tokyo",
-      pickupDate: "17, Aug 2025",
+      origin: "USA",
+      destination: "INDIA",
+      pickupDate: "23, Sep 2025",
       pickupTime: "10:00",
-      status: "Accepted",
-      comments: "Label printed",
-      agentName: "Emily Brown",
-      shipmentType: "Air"
+      status: "Pending",
+      comments: "Item is yet to be dispatched",
+      agentName: "William Burkett",
+      shipmentType: "Air express"
     },
   },
 
@@ -350,6 +350,7 @@ const deliveries = [
     },
   }
 ];
+
 
 
 
