@@ -1,5 +1,5 @@
 // deliveries.js
-export const deliveries = [
+const deliveries = [
   {
     trackingCode: "R6555554RFE",
     estimatedDelivery: "2025-09-16T00:00:00Z",
