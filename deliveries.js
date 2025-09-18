@@ -78,41 +78,42 @@ const deliveries = [
   },
 
   {
-    trackingCode: "US44556677",
-    estimatedDelivery: "Sep 22, 2025 17:00",
+    trackingCode: "US44556655",
+    estimatedDelivery: "Sep 19, 2025 09:00",
     customs: "",
     shipper: {
-      name: "Ameliorate",
-      phone: "+1 9193442178",
-      address: "06-101, WeWork 115 Broadway, New York, NY 10006, USA.",
-      email: "amelioratecollaboration@gmail.com"
+      name: "Kiehl's",
+      phone: "+1 (929) 330-9752",
+      address: "435 Hudson Street, 5th Floor, New York, NY 10014, USA",
+      email: "kiehlscollaborations@gmail.com"
     },
     receiver: {
-      name: "Ritika Gill",
-      phone: "+91 7018106747",
-      address: " 3 India ( Post graduate government college for girls sector 11 chandigarh 160011 )",
-      email: "skindewy218@gmail.com"
+      name: " tatiana.t.ugc",
+      phone: "+1 2348552505",
+      address: "United States of America 
+300 Elruth Court, Apt 102, Girard OH, 44420",
+      email: "tatiana.t.ugc@gmail.com"
     },
     shipment: {
-      weight: "5.6kg",
+      weight: "5.6 kg",
       courier: "NOVA",
-      packages: "PR Package",
+      packages: "Pr Package",
       mode: "Air",
-      product: "Skincare products",
+      product: "Sckincare products",
       quantity: 30,
-      paymentMode: "Google pay",
-      totalFreight: "$160",
+      paymentMode: "Paypal",
+      totalFreight: "$250",
       carrier: "Air carrier (Nova445763222)",
-      carrierRef: "BA556677",
-      departureTime: "11:15",
-      origin: "USA",
-      destination: "INDIA",
-      pickupDate: "23, Sep 2025",
+      carrierRef: "AC8899",
+      departureTime: "09:00",
+      origin: "New York",
+      destination: "United States of America",
+      pickupDate: "21, Sep 2025",
       pickupTime: "10:00",
       status: "Accepted",
-      comments: "Item is yet to be dispatched",
-      agentName: "William Burkett",
-      shipmentType: "Air express"
+      comments: "Awaiting clearane",
+      agentName: "Jason Moore",
+      shipmentType: "Air Express"
     },
   },
 
@@ -351,6 +352,7 @@ const deliveries = [
     },
   }
 ];
+
 
 
 
