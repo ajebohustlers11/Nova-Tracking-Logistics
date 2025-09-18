@@ -105,7 +105,7 @@ const deliveries = [
       departureTime: "09:00",
       origin: "New York",
       destination: "United States of America",
-      pickupDate: "2025-09-21",
+      pickupDate: "09-21-2025",
       pickupTime: "10:00",
       status: "Accepted",
       comments: "Awaiting clearance",
@@ -309,6 +309,7 @@ const deliveries = [
     }
   }
 ];
+
 
 
 
