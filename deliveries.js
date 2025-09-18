@@ -146,8 +146,7 @@ const deliveries = [
       carrierRef: "AC8899",
       departureTime: "09:00",
       origin: "New York",
-      destination: "United States of America 
-300 Elruth Court, Apt 102, Girard OH, 44420",
+      destination: "United States of America",
       pickupDate: "21, Sep 2025",
       pickupTime: "10:00",
       status: "Accepted",
@@ -352,6 +351,7 @@ const deliveries = [
     },
   }
 ];
+
 
 
 
