@@ -77,7 +77,7 @@ const deliveries = [
 
   {
     trackingCode: "US44556655",
-    estimatedDelivery: "2025-09-19T09:00:00Z",
+    estimatedDelivery: "09/19/2025",
     customs: "",
     shipper: {
       name: "Kiehl's",
@@ -309,5 +309,6 @@ const deliveries = [
     }
   }
 ];
+
 
 
