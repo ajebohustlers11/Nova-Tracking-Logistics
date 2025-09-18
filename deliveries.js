@@ -1,10 +1,8 @@
 // deliveries.js
-
-// Delivery data
-const deliveries = [
+export const deliveries = [
   {
     trackingCode: "R6555554RFE",
-    estimatedDelivery: "September 16, 2025",
+    estimatedDelivery: "2025-09-16T00:00:00Z",
     customs: "",
     shipper: {
       name: "BYOMA",
@@ -35,17 +33,17 @@ const deliveries = [
       comments: "Package prepared for shipment",
       agentName: "Jason Moore",
       shipmentType: "Freight"
-    },
+    }
   },
 
   {
     trackingCode: "R6556654RFE",
-    estimatedDelivery: "Sep 12, 2025 14:00",
+    estimatedDelivery: "2025-09-12T14:00:00Z",
     customs: "",
     shipper: {
       name: "Ameliorate",
       phone: "+1 (929) 330-9752",
-      address: "06-101, WeWork 115 Broadway, New York, NY 10006, USA.",
+      address: "06-101, WeWork 115 Broadway, New York, NY 10006, USA",
       email: "amelioratecollaboration@gmail.com"
     },
     receiver: {
@@ -68,18 +66,18 @@ const deliveries = [
       departureTime: "09:30",
       origin: "New York",
       destination: "India",
-      pickupDate: "Sep 17, 2025",
+      pickupDate: "2025-09-17",
       pickupTime: "08:00",
       status: "Accepted",
       comments: "Package awaiting insurance coverage",
       agentName: "Jason Moore",
       shipmentType: "Air Express"
-    },
+    }
   },
 
   {
     trackingCode: "US44556655",
-    estimatedDelivery: "Sep 19, 2025 09:00",
+    estimatedDelivery: "2025-09-19T09:00:00Z",
     customs: "",
     shipper: {
       name: "Kiehl's",
@@ -107,20 +105,18 @@ const deliveries = [
       departureTime: "09:00",
       origin: "New York",
       destination: "United States of America",
-      pickupDate: "Sep 21, 2025",
+      pickupDate: "2025-09-21",
       pickupTime: "10:00",
       status: "Accepted",
       comments: "Awaiting clearance",
       agentName: "Jason Moore",
       shipmentType: "Air Express"
-    },
+    }
   },
-
-  // ✅ Removed duplicate of US44556655
 
   {
     trackingCode: "DE55443322",
-    estimatedDelivery: "Aug 30, 2025 19:00",
+    estimatedDelivery: "2025-08-30T19:00:00Z",
     customs: "Cleared, Berlin",
     shipper: {
       name: "Berlin Freight",
@@ -148,16 +144,170 @@ const deliveries = [
       departureTime: "06:00",
       origin: "Berlin",
       destination: "Paris",
-      pickupDate: "Aug 18, 2025",
+      pickupDate: "2025-08-18",
       pickupTime: "05:30",
       status: "Custom cleared",
       comments: "In transit",
       agentName: "Hans Müller",
       shipmentType: "Ground"
-    },
+    }
   },
 
-  // ... ✅ other objects left unchanged, but cleaned in the same way
+  {
+    trackingCode: "FR11223344",
+    estimatedDelivery: "2025-09-01T13:00:00Z",
+    customs: "Orly Airport, Paris",
+    shipper: {
+      name: "Paris Couriers",
+      phone: "+33 145 678901",
+      address: "Boulevard St-Germain, Paris",
+      email: "contact@parcouriers.fr"
+    },
+    receiver: {
+      name: "Sarah Johnson",
+      phone: "+1 415 223344",
+      address: "Market St, San Francisco, USA",
+      email: "sarah.j@example.com"
+    },
+    shipment: {
+      weight: "2 kg",
+      courier: "Chronopost",
+      packages: "Small Box",
+      mode: "Air",
+      product: "Perfume",
+      quantity: 5,
+      paymentMode: "Credit Card",
+      totalFreight: "€150",
+      carrier: "Air France",
+      carrierRef: "AF2233",
+      departureTime: "08:15",
+      origin: "Paris",
+      destination: "San Francisco",
+      pickupDate: "2025-08-19",
+      pickupTime: "07:30",
+      status: "Order Processing",
+      comments: "At warehouse",
+      agentName: "Claire Dupont",
+      shipmentType: "Air Express"
+    }
+  },
+
+  {
+    trackingCode: "IN77889900",
+    estimatedDelivery: "2025-09-03T18:00:00Z",
+    customs: "Mumbai port",
+    shipper: {
+      name: "IndiaCargo",
+      phone: "+91 22 22334455",
+      address: "Marine Lines, Mumbai",
+      email: "support@indiacargo.in"
+    },
+    receiver: {
+      name: "David Miller",
+      phone: "+61 400 778899",
+      address: "George St, Sydney, Australia",
+      email: "david.m@example.au"
+    },
+    shipment: {
+      weight: "15 kg",
+      courier: "BlueDart",
+      packages: "Carton",
+      mode: "Sea",
+      product: "Textiles",
+      quantity: 50,
+      paymentMode: "Letter of Credit",
+      totalFreight: "$600",
+      carrier: "Maersk",
+      carrierRef: "MS7788",
+      departureTime: "10:45",
+      origin: "Mumbai",
+      destination: "Sydney",
+      pickupDate: "2025-08-21",
+      pickupTime: "09:30",
+      status: "Accepted",
+      comments: "Onboard vessel",
+      agentName: "Ravi Kumar",
+      shipmentType: "Sea Freight"
+    }
+  },
+
+  {
+    trackingCode: "BR00998877",
+    estimatedDelivery: "2025-09-08T16:00:00Z",
+    customs: "Sao Paulo airport",
+    shipper: {
+      name: "Brasil Express",
+      phone: "+55 11 987654321",
+      address: "Av Paulista, Sao Paulo",
+      email: "contact@br-express.com"
+    },
+    receiver: {
+      name: "Anna Schmidt",
+      phone: "+49 176 556677",
+      address: "Hauptstrasse, Munich, Germany",
+      email: "anna.s@example.de"
+    },
+    shipment: {
+      weight: "9 kg",
+      courier: "LATAM Cargo",
+      packages: "Box",
+      mode: "Air",
+      product: "Shoes",
+      quantity: 20,
+      paymentMode: "Credit Card",
+      totalFreight: "$350",
+      carrier: "LATAM Airlines",
+      carrierRef: "LA8899",
+      departureTime: "14:00",
+      origin: "Sao Paulo",
+      destination: "Munich",
+      pickupDate: "2025-08-23",
+      pickupTime: "08:30",
+      status: "Shipment Pending",
+      comments: "Scheduled for flight",
+      agentName: "Carlos Silva",
+      shipmentType: "Air Express"
+    }
+  },
+
+  {
+    trackingCode: "AU66554433",
+    estimatedDelivery: "2025-09-10T11:00:00Z",
+    customs: "Sydney Airport, Cleared",
+    shipper: {
+      name: "Aussie Couriers",
+      phone: "+61 2 99887766",
+      address: "George St, Sydney",
+      email: "help@aussiecouriers.au"
+    },
+    receiver: {
+      name: "Mark Thompson",
+      phone: "+1 917 445566",
+      address: "5th Ave, New York, USA",
+      email: "mark.t@example.com"
+    },
+    shipment: {
+      weight: "4 kg",
+      courier: "Qantas Cargo",
+      packages: "Envelope",
+      mode: "Air",
+      product: "Contracts",
+      quantity: 1,
+      paymentMode: "Bank Transfer",
+      totalFreight: "$100",
+      carrier: "Qantas",
+      carrierRef: "QF4455",
+      departureTime: "12:00",
+      origin: "Sydney",
+      destination: "New York",
+      pickupDate: "2025-08-24",
+      pickupTime: "07:15",
+      status: "Estimated Delivery",
+      comments: "Arriving soon",
+      agentName: "Olivia White",
+      shipmentType: "Air"
+    }
+  }
 ];
 
-export default deliveries;
+
