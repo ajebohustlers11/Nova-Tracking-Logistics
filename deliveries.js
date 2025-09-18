@@ -38,7 +38,7 @@ const deliveries = [
 
   {
     trackingCode: "R6556654RFE",
-    estimatedDelivery: "2025-09-12T14:00:00Z",
+    estimatedDelivery: "2025-09-18",
     customs: "",
     shipper: {
       name: "Ameliorate",
@@ -66,7 +66,7 @@ const deliveries = [
       departureTime: "09:30",
       origin: "New York",
       destination: "India",
-      pickupDate: "2025-09-17",
+      pickupDate: "2025-09-22",
       pickupTime: "08:00",
       status: "Accepted",
       comments: "Package awaiting insurance coverage",
@@ -105,7 +105,7 @@ const deliveries = [
       departureTime: "09:00",
       origin: "New York",
       destination: "United States of America",
-      pickupDate: "09-21-2025",
+      pickupDate: "09-22-2025",
       pickupTime: "10:00",
       status: "Accepted",
       comments: "Awaiting clearance",
@@ -309,6 +309,7 @@ const deliveries = [
     }
   }
 ];
+
 
 
 
