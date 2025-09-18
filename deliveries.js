@@ -117,41 +117,43 @@ const deliveries = [
   },
 
   {
-    trackingCode: "CA88997766",
-    estimatedDelivery: "Sep 05, 2025 09:00",
-    customs: "Pending clearance, Toronto",
+    trackingCode: "US88997766",
+    estimatedDelivery: "Sep 19, 2025 09:00",
+    customs: "",
     shipper: {
-      name: "Canada Express",
-      phone: "+1 416 555 2299",
-      address: "123 King St W, Toronto",
-      email: "info@canexpress.ca"
+      name: "Kiehl's",
+      phone: "+1 (929) 330-9752",
+      address: "435 Hudson Street, 5th Floor, New York, NY 10014, USA",
+      email: "kiehlscollaborations@gmail.com"
     },
     receiver: {
-      name: "Ahmed Hassan",
-      phone: "+20 100 222 3344",
-      address: "Tahrir Square, Cairo, Egypt",
-      email: "ahmed.h@example.eg"
+      name: " tatiana.t.ugc",
+      phone: "+1 2348552505",
+      address: "United States of America 
+300 Elruth Court, Apt 102, Girard OH, 44420",
+      email: "tatiana.t.ugc@gmail.com"
     },
     shipment: {
-      weight: "25 kg",
-      courier: "UPS",
-      packages: "Crate",
+      weight: "5.6 kg",
+      courier: "NOVA",
+      packages: "Pr Package",
       mode: "Air",
-      product: "Machinery parts",
-      quantity: 2,
-      paymentMode: "Wire Transfer",
-      totalFreight: "$1,200",
-      carrier: "Air Canada",
+      product: "Sckincare products",
+      quantity: 30,
+      paymentMode: "Paypal",
+      totalFreight: "$250",
+      carrier: "Air carrier (Nova445763222)",
       carrierRef: "AC8899",
-      departureTime: "15:20",
-      origin: "Toronto",
-      destination: "Cairo",
-      pickupDate: "22, Aug 2025",
-      pickupTime: "07:00",
-      status: "Shipment Pending",
-      comments: "Awaiting customs documents",
-      agentName: "Sophia Johnson",
-      shipmentType: "Air Cargo"
+      departureTime: "09:00",
+      origin: "New York",
+      destination: "United States of America 
+300 Elruth Court, Apt 102, Girard OH, 44420",
+      pickupDate: "21, Sep 2025",
+      pickupTime: "10:00",
+      status: "Accepted",
+      comments: "Awaiting clearane",
+      agentName: "Jason Moore",
+      shipmentType: "Air Express"
     },
   },
 
@@ -350,6 +352,7 @@ const deliveries = [
     },
   }
 ];
+
 
 
 
