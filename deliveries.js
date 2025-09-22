@@ -39,7 +39,7 @@ const deliveries = [
   {
     trackingCode: "R6556654RFE",
     estimatedDelivery: "2025-09-18",
-    customs: "",
+    customs: "Package placed on imposed mandatory custom fee regulations before clearance",
     shipper: {
       name: "Ameliorate",
       phone: "+1 (929) 330-9752",
@@ -309,6 +309,7 @@ const deliveries = [
     }
   }
 ];
+
 
 
 
